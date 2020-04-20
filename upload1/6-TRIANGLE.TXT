@@ -1,0 +1,39 @@
+//PROGRAM-6: WRITE A PROGRAM TO IMPLEMENT CONSTRUCTOR OVERLOADING BY PASSING DIFFERENT NUMBER OF PARAMETERS OF DIFFERENT TYPES
+
+class Triangle
+{
+	double side1, side2, side3;
+	
+	Triangle(double a)
+	{
+		side1 = side2 = side3 = a;
+	}
+	
+	Triangle(double a, double b)
+	{
+		side1 = side2 = a;
+		side3 = b;
+	}
+	
+	Triangle(int a, float b, double c)
+	{
+		side1 = a;
+		side2 = b;
+		side3 = c;
+	}
+	
+	double perimeter()
+	{
+		return (side1 + side2 + side3);
+	}
+	public static void main(String args[])
+	{
+		Triangle t1 = new Triangle(5);
+		Triangle t2 = new Triangle(6,5);
+		Triangle t3 = new Triangle(10,6,7);
+		
+		System.out.println("\n perimter of equilateral triangle is: "+t1.perimeter());
+		System.out.println("\n perimter of isosceles triangle is: "+t2.perimeter());
+		System.out.println("\n perimter of scalene triangle is: "+t3.perimeter());
+	}
+}

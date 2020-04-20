@@ -1,0 +1,53 @@
+//PROGRAM-4: WRITE A PROGRAM TO IMPLEMENT ALL STRING OPERATIONS
+
+class DemoString
+{
+	public static void main(String args[])
+	{
+		String s1 = "iqac";
+		String s2 = "bca5thsemester";
+		String s3 = " MLACW ";
+	
+		System.out.println("\n First String s1 is: "+s1);
+		System.out.println("\n Second String s2 is: "+s2);
+		System.out.println("\n Third String s3 is: "+s3);
+				
+		System.out.println("\n----------LENGTH OF THE STRING----------");
+		int length1 = s1.length();
+		System.out.println("length of first string is: " +length1+ "\n");
+				
+		System.out.println("\n----------STRING CONCATENATION----------");
+		String s = s1.concat(s2);
+		System.out.println("String s1 and s2 after concatenation: " +s);
+		
+		System.out.println("\n----------EQUALS----------");
+		if(s1.equals(s2))
+			System.out.println("Strings s1 and s2 are equal");
+		else
+			System.out.println("Strings s1 and s2 are not equal");
+		
+		System.out.println("\n----------STRING COMPARISION----------");	
+		System.out.println("s1.compareTo(s2): "+s1.compareTo(s2)); // -ve if string less than argument, +ve if string greater than argument, 0 if equal
+			
+		System.out.println("\n----------CHAR AT----------");
+		System.out.println("the seventh character of second string s2 is: " +s2.charAt(6));
+		
+		System.out.println("\n----------INDEX OF THE STRING----------");
+		System.out.println("a occurs at position: " +s1.indexOf('a')+ " in " +s1);
+		
+		System.out.println("\n----------SUBSTRING----------");
+		System.out.println("printing substring in string s1 from 5th to 13th position is: " +s2.substring(6,9));
+		
+		System.out.println("\n----------TRIM----------");
+		System.out.println("String s3 after performing trim:"+s3.trim());
+		
+		System.out.println("\n----------LOWERCASE OF THE STRING----------");
+		System.out.println("String s3 after performing toLowerCase: "+s3.toLowerCase());
+		
+		System.out.println("\n----------UPPERCASE OF THE STRING----------");
+		System.out.println("String s1 after performing toUpperCase: "+s1.toUpperCase());
+		
+		System.out.println("\n----------REPLACING THE STRING----------");
+		System.out.println("In String s2, replacing s with z: "+s2.replace('s','z'));	
+	}
+}

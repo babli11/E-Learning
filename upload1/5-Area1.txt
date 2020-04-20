@@ -1,0 +1,54 @@
+//PROGRAM-5: WRITE A PROGRAM TO FIND AREA OF GEOMETRICAL FIGURES USING METHOD
+
+import java.util.*;
+class Area1
+{
+	static void AreaOfCircle(double r)
+	{
+		double area=3.14*r*r;
+		System.out.println("Area of circle is :"+area);
+	}
+	static void AreaOfSquare(double l)
+	{
+		double area = l*l;
+		System.out.println("Area of square is :"+area);
+	}
+	static void AreaOfRectangle(double l,double b)
+	{
+		double area = l*b;
+		System.out.println("Area of rectangle is :"+area);
+	}
+	static void AreaOfTriangle(double b,double h)
+	{
+		double area=0.5*b*h;
+		System.out.println("Area of triangle is :"+area);
+	}
+	public static void main(String args[])
+	{
+		Scanner s=new Scanner(System.in);
+
+		System.out.println("\n---------CIRCLE---------");
+		System.out.println("Enter radius: ");
+		double radius=s.nextInt();
+		AreaOfCircle(radius);
+		
+		System.out.println("\n---------SQUARE---------");
+		System.out.println("Enter length of the side ");
+		double side=s.nextInt();
+		AreaOfSquare(side);
+		
+		System.out.println("\n---------RECTANGLE---------");
+		System.out.println("Enter length of a rectangle: ");
+		double length=s.nextInt();
+		System.out.println("Enter breadth of a rectangle: ");
+		double breadth=s.nextInt();
+		AreaOfRectangle(length,breadth);
+
+		System.out.println("\n---------TRIANGLE---------");
+		System.out.println("Enter base of the triangle ");
+		double base=s.nextInt();
+		System.out.println("Enter height of the triangle ");
+		double height=s.nextInt();
+		AreaOfTriangle(base,height);
+	}	
+}

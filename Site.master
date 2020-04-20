@@ -1,0 +1,236 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<html>
+<!-- #BeginTemplate "/Templates/template.dwt" --> 
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>Learning Template4</title>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html;">
+<link href="bootstrap/css/bootstrap.min.css" rel="Stylesheet" type="text/css" />
+<script language="javascript">
+    function makeArray() {
+        for (i = 0; i < makeArray.arguments.length; i++)
+            this[i] = makeArray.arguments[i];
+    }
+
+    function getFullYear(d) {
+        var y = d.getYear();
+        if (y < 1000) { y += 1900 };
+        return y;
+    }
+
+    //var zone = "EDT";
+    var days = new makeArray("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+    var months = new makeArray("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+    function format_time(t) {
+
+        var Day = t.getDay();
+        var Date = t.getDate();
+        var Month = t.getMonth();
+        var Year = t.getFullYear();
+
+        timeString = "";
+        timeString += days[Day];
+        timeString += ", ";
+        timeString += " ";
+        timeString += months[Month];
+        timeString += " ";
+        timeString += Date;
+        timeString += ", ";
+        timeString += " ";
+        timeString += Year;
+
+        return timeString;
+    }
+</SCRIPT>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" 
+    marginheight="0" style="font-family: 'Times New Roman', Times, serif">
+<table class="table-striped" width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td bgcolor="#395080" height="50" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td width="50%" valign="top"><img name="companyname" src="images/companyname.jpg" width="247" height="50" border="0"></td>
+          <td width="50%" valign="top"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="15">
+              <tr> 
+                <td valign="top" align="right" class="menutext"> 
+                  <script language=JavaScript>
+			<!--
+                      d = new Date();
+                      document.write(format_time(d));
+			// -->
+		</script>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="98" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" width="82%"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+              <tr bgcolor="#EAEBE4"> 
+                <td height="73" valign="top" bgcolor="#EAEBE4"><img src="images/spacer.gif" width="1" height="73"></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr> 
+                <td height="25" bgcolor="#395080" class="menutext" nowrap width="98%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="home.aspx" class="menutext">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="aboutus.aspx" class="menutext">About 
+                  Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<%--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="logselect.aspx" class="menutext">Student login</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--%>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="contactus.aspx" class="menutext" >Contact Us</a>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="reg11.aspx" class="menutext">Registration & Login</a>
+
+                 <%--<ul class="menutext">--%>
+                 <%--<a href="bca.aspx">BCA</a>
+                 <a href="bsc.aspx">BSC</a>--%>
+                <%-- </ul>--%>
+                 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="teacherreg.aspx" class="menutext">Teacher Signin</a>
+                 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="admin.aspx" class="menutext">Admin</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 
+              <%-- <div class="dropdown">--%>
+                     
+                    <%--<i class="fa fa-caret-down"></i>
+                  
+                   <div class="dropdown-content" id="myDropdown">
+                   <a href="bca.aspx">BCA</a>
+
+                    <a href="bsc.aspx">BSC</a>
+
+
+
+                   
+                    </div>
+                   </div>--%>
+               <%-- <script>
+                    function myFunctio() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    window.onclick=function(e)
+                    {
+                    if(!e.traget.matches('.dropbtn')) {
+                    var myDropdown=document.getElementById("myDropdown");
+                    if(myDropdown.classList.contains('show');
+                    
+
+
+                    }
+                    }
+                    
+
+                    </script>
+                
+               --%>
+                
+                
+               
+               
+
+               
+                <td height="25" width="22" valign="bottom"><img name="triangle1" src="images/triangle1.jpg" width="22" height="25" border="0"></td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" align="right" width="340"><img name="graphic1" src="images/graphic1.jpg" width="340" height="98" border="0"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="72%" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" width="152" bgcolor="#395080"> 
+            <table width="152" border="0" cellspacing="0" cellpadding="0" height="100%">
+              <tr> 
+                <td width="152" bgcolor="#395080" height="140" valign="top"><img name="graphic2" src="images/graphic2.jpg" width="152" height="128" border="0"></td>
+              </tr>
+              <tr> 
+                <td valign="top" bgcolor="#395080"> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3" height="100">
+                   <%-- <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td nowrap class="menutext"><a href="news.aspx" class="menutext">News</a></td>
+                    </tr>--%>
+                   <%-- <tr> --%>
+                     <%-- <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="course.aspx" class="menutext">Course Catalog</a></td>--%>
+
+                   <%-- </tr>
+                    <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="studeligibility.aspx" class="menutext">Students eligibility</a></td>
+                    </tr>--%>
+                  <%--  <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="#" class="menutext">model question papers</a></td>
+                    </tr>--%>
+                   <%-- <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="ebooks.aspx" class="menutext">e books</a></td>
+                    </tr>--%>
+                   <%-- <tr> 
+                      <td width="10" align="right"><img src="images/square.jpg" width="7" height="7"></td>
+                      <td class="menutext"><a href="#" class="menutext">about teachers</a></td>
+                    </tr>--%>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" width="85%"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="20" height="100%">
+              <tr> 
+                <td valign="top" height="420" class="text"> <!-- #BeginEditable "content" -->
+                  
+                <asp:ContentPlaceHolder ID="z1" runat="server">
+                       <p>   &nbsp;
+                   </p>
+                  </asp:ContentPlaceHolder>
+               
+            
+                  
+                  
+                  <!-- #EndEditable --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td height="43" valign="top"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="43">
+        <tr> 
+          <td width="152" height="23" bgcolor="#395080"><img src="images/spacer.gif" width="152" height="8"></td>
+          <td height="23" width="19" valign="top" align="right" bgcolor="#395080"><img name="triangle2" src="images/triangle2.jpg" width="25" height="25" border="0"></td>
+          <td height="23" bgcolor="#EAEBE4" width="92%" class="text" align="center" valign="middle" nowrap><a href="default.aspx" class="text">Home</a> 
+            | <a href="aboutus.aspx" class="text">About</a> | <a href="#" class="text">sign in</a>
+            | <a href="news.aspx" class="text">News</a> | <a href="course.aspx" class="text">Course 
+            Catalog</a> | <%--<a href="#" class="text">model question papers </a>--%> |<%-- <a href="#" class="text">Instructors</a>--%> 
+            | <a href="#" class="text">about teachers</a> | <a href="#" class="text">Contact</a> |<a href="teacherreg.aspx" class="menutext"> teacher Register</a></td>
+        </tr>
+        <tr> 
+          <td height="20" bgcolor="#395080">&nbsp;</td>
+          <td height="20" bgcolor="#395080">&nbsp;</td>
+          <td height="20" bgcolor="#395080" valign="middle" align="center" class="footer">Copyright 
+            &copy; 2003 www.YourCompanyName.com. All Rights Reserved. Designed 
+            by <a href="http://www.entheosweb.com/" class="footer">Entheosweb.com </a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate -->
+</html>

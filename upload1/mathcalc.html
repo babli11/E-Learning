@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>SOLUTION FOR MATHEMATICAL EXPRESSION</title>
+<script type="text/javascript">
+function calc()
+{
+document.frmexp.result.value=eval(document.frmexp.expr.value);
+}
+</script>
+</head>
+<body>
+<form name ="frmexp">
+enter a mathemaical expression in the text box, click on calculate button to display the result<br /><br />
+
+<table cellpadding="4" cellspacing="0" height=100 width=200 bgcolor="lightgrey">
+<tr>
+<td><input type="text" size="20" name="expr"></td>
+<td><input type="button" name="button1" value="calculate" onclick="calc();"></td>
+</tr>
+<tr>
+<td><b>result:<br /></b><input type="text" size="20" name="result"></td>
+<td><input type="reset" name="reset" value="reset"></td>
+</tr>
+</table>
+<P>CLICK ON RESET BUTTON TO ENTER ANOTHER NEW EXPRESSION</p>
+</form>
+</body>
+</html>
